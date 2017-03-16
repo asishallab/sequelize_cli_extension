@@ -1,0 +1,13 @@
+<% associationsArr.forEach(function(assocArr) { %>
+  <% if (assocArr[1] === 'belongsTo') { %>
+    <%= assocArr[0].toLowerCase() + "_id" %>: {
+      type: Sequelize.INTEGER,
+      references: {
+        model: '<%- assocArr[0] %>',
+        key: 'id'
+      },
+      onUpdate: 'cascade',
+      onDelete: 'cascade'
+    }
+  <% } %>
+<% }) %>

@@ -1,0 +1,3 @@
+<% associationsArr.forEach( function( assocArr ) { %>
+  <%- name %>.<%- assocArr[1] %>(models.<%- assocArr[0] %>);
+<% }) %>
