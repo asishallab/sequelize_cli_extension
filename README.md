@@ -1,6 +1,6 @@
 # sequelize_cli_extension
 
-sequelize/cli code generation of associations. Disclaiming in all honesty, that it's done in a somewhat quick and dirty way.
+`sequelize/cli` code generation of associations. Disclaiming in all honesty, that it's done in a somewhat quick and dirty way.
 
 See this [`sequelize/cli` Issue](https://github.com/sequelize/cli/issues/435) for more details.
 

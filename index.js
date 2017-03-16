@@ -1,4 +1,4 @@
-#!/usr/bin/env nodejs
+#!/usr/bin/env node
 
 // Required packages:
 ejs = require('ejs');
@@ -42,7 +42,7 @@ replace({
   files: program.modelFile,
   from: /\/\/ associations can be defined here/,
   to: modelJs
-}).catch(error => {
+}).catch(function(error) {
   console.error("Error occurred changing the model file:", error)
 })
 
@@ -53,7 +53,7 @@ if (migrationJs !== '') {
     files: program.migrationFile,
     from: /\s+createdAt:/,
     to: "\n" + migrationJs + ',\ncreatedAt:'
-  }).catch(error => {
+  }).catch(function(error) {
     console.error("Error occurred changing the migration file:", error)
   })
 }

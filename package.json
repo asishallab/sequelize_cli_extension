@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Adds more functions to the sequelize/cli suite",
   "main": "index.js",
+  "bin": {
+    "sequelize_cli_extension": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
