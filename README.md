@@ -6,7 +6,7 @@ See this [`sequelize/cli` Issue](https://github.com/sequelize/cli/issues/435) fo
 
 ## Usage
 
-`sequelize_cli_extension --modelFile ./my_project/server/models/todo.js --migrationFile ./my_project/server/migrations/<date>-create-todo.js --name Todo --associations 'User:belongsTo'`
+    sequelize_cli_extension --modelFile ./my_project/server/models/todo.js --migrationFile ./my_project/server/migrations/<date>-create-todo.js --name Todo --associations 'User:belongsTo'
 
 ## What it's meant for
 
